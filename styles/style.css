@@ -22,8 +22,10 @@ section.banner-area {
 
 .flex-container {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
+
 
 .banner, .cta {
     width: 1170px;
@@ -93,6 +95,7 @@ section.banner-area {
 .cta-heading h1 {
     font-size: 48px;
     color: #0A0826;
+    margin-top: 10px;
 }
 
 .cta-text {
@@ -101,4 +104,34 @@ section.banner-area {
     font-weight: 400;
     margin-bottom: 40px;
     margin-right: 80px;
+}
+.match-highlights {
+    width: 1170px;
+}
+.highlights-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+.single-highlight {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Copyright area  */
+.copyright {
+    width: 450px;
+    text-align: center;
+}
+
+.social-icons {
+    margin: 22px 0;
+}
+
+.social-icons i {
+    background-color: #E7E7E8;
+    color: #969BAB;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 18px;
 }
