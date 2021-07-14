@@ -88,12 +88,19 @@ section.banner-area {
 .single-player {
     padding: 15px;
     box-shadow: 10px 10px 20px grey;
-    border: 2px solid transparent;
+    transition: background-color 1s, color 1s;
 }
 
 .single-player:hover {
-    border: 2px solid rgb(147, 140, 153);
+    cursor: pointer;
+    color: red;
+    background-color: #3DBAFD;
 }
+
+.single-player:hover h3, .single-player:hover p  {
+    color: black;
+}
+
 
 .player-name {
     color: #18191F;
@@ -198,16 +205,42 @@ section.banner-area {
     color: #0f0d15;
 }
 
+/* image gallery section css  */
+.image-gallery-area {
+    background-color: #F7EDED;
+}
+.image-gallery {
+    width: 1170px;
+}
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+.single-image{
+    transition: width 1s, height 1s, transform 1s, box-shadow 1s ;
+}
+
+.single-image img {
+    box-shadow: 5px 5px 5px grey;
+    border-radius: 20px;
+}
+
+.single-image:hover {
+    transform: scale(1.1);
+}
+
 /* Copyright area  */
+.copyright-area {
+    padding-top: 30px;
+}
 .copyright {
     width: 450px;
     text-align: center;
 }
-
 .social-icons {
     margin: 22px 0;
 }
-
 .social-icons i {
     background-color: #E7E7E8;
     color: #969BAB;
@@ -215,4 +248,3 @@ section.banner-area {
     border-radius: 50%;
     font-size: 18px;
 }
-
