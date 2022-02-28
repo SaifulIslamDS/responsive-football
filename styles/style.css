@@ -82,14 +82,15 @@ img {
 .banner-image img {
     float: right;
     width: 90%;
-    transition: width 1s, height 1s, transform 1s;
+    transition: width 1s, height 1s, transform 1s ease-in-out;
 
 }
 
 .banner-image img:hover {
     cursor: pointer;
-    transform: scale(1.25, 1.25) translate(-100px, 0px);
+    transform: scale(1.5, 1.25) translate(-100px, 0px);
 }
+
 
 /******************
  player grid css  
